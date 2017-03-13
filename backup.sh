@@ -3,7 +3,6 @@ rm -rf /home/swei/libobk/data/
 rm -f /tmp/log-*
 
 SBT=`pwd`/libsbt.so
-sed -r "s|SBT_LIBRARY.*\.so|SBT_LIBRARY=$SBT|" -i sbt-backup.txt
 
 cat > sbt-backup.txt << END
 connect target /;
